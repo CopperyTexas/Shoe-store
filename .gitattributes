@@ -1,0 +1,17 @@
+# Устанавливаем перевод строк для текстовых файлов
+* text=auto
+
+# Принудительное использование LF для этих типов файлов
+*.html text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.ts text eol=lf
+*.json text eol=lf
+*.js text eol=lf
+
+# Игнорируем бинарные файлы (иконки, шрифты, изображения)
+*.svg -text
+*.png -text
+*.jpg -text
+*.woff -text
+*.ttf -text
