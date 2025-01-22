@@ -1,9 +1,17 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { LogoComponent } from '../../logo/logo.component';
+import { NavigationComponent } from '../../navigation/navigation.component';
+import { SocialIconsComponent } from '../../social-icons/social-icons.component';
+import { UserMenuComponent } from '../../user-menu/user-menu.component';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterModule],
+  imports: [
+    LogoComponent,
+    SocialIconsComponent,
+    NavigationComponent,
+    UserMenuComponent,
+  ],
   standalone: true,
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
