@@ -10,9 +10,11 @@
       Designed for comfort, built for performance, and crafted to keep you ahead
       of the trend. Explore a variety of styles that perfectly match your vibe.
     </p>
-    <button class="bg-red-600 p-3 text-white font-semibold rounded-md">
-      View All Items
-    </button>
+    <a
+      routerLink="/shop"
+      class="bg-red-600 p-3 text-white font-semibold rounded-md transform hover:scale-110 inline-block transition-transform duration-300"
+      >View All Items</a
+    >
   </div>
   <img
     [@slideInOut]="animationState"
@@ -20,4 +22,51 @@
     class="w-[500px] h-[500px] object-contain transition-all duration-700 ease-in-out"
     [src]="images[currentImageIndex]"
   />
+</section>
+<section
+  class="flex justify-between items-center shadow-2xl -mt-24 bg-white rounded-xl overflow-hidden"
+>
+  <div class="flex flex-col gap-4 w-1/2 p-8 px-12">
+    <div class="flex items-center gap-4">
+      <figure>
+        <img
+          src="assets/images/faces/Dorothy.png"
+          alt="Portrait of Dorothy Holland, Chief Marketing Officer"
+        />
+      </figure>
+      <div>
+        <h6 class="font-semibold">Dorothy Holland</h6>
+        <p class="text-xs">Chief Marketing Officer</p>
+      </div>
+    </div>
+    <div class="flex flex-col gap-4">
+      <h5 class="font-bold text-2xl">
+        Fashion is more than just clothing — it’s a way to express yourself.
+      </h5>
+      <p>
+        As the Chief Marketing Officer, I believe everyone deserves to feel
+        confident and stylish. That’s why I’m excited to offer you a 25%
+        discount on your next purchase. Let us help you elevate your style
+        today!
+      </p>
+    </div>
+  </div>
+  <div
+    class="w-1/2 min-h-[50vh] px-12 bg-[url('/assets/images/bg/Discount-bg.png')] bg-cover bg-center text-white relative flex justify-center items-center"
+  >
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative z-10 flex flex-col gap-4">
+      <h5 class="font-bold text-2xl">25% Discount</h5>
+      <p class="text-sm">
+        Click the button below to get your exclusive promo code for your next
+        purchase. Don’t miss this opportunity to upgrade your style!
+      </p>
+      <button
+        aria-label="Get a discount"
+        class="bg-red-600 p-3 text-white font-semibold rounded-md transform hover:scale-110 transition-transform duration-300 w-1/3"
+      >
+        Get Discount
+      </button>
+    </div>
+  </div>
 </section>

@@ -6,17 +6,18 @@ import {
   trigger,
 } from '@angular/animations';
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-hero-main',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './hero-main.component.html',
   animations: [
     trigger('slideInOut', [
       state('in', style({ transform: 'translateX(0)', opacity: 1 })),
       state('out', style({ transform: 'translateX(100%)', opacity: 0 })),
       transition('out => in', [
-        style({ transform: 'translateX(-100%)', opacity: 0 }),
+        style({ transform: 'translateX(100%)', opacity: 0 }),
         animate('1s ease-out'),
       ]),
       transition('in => out', [
