@@ -1,0 +1,9 @@
+<div class="min-w-[10vw] min-h-[40vh] flex flex-col items-center">
+  <img
+    [src]="cards.image"
+    [alt]="cards.title"
+    class="shadow-2xl bg-white rounded-lg overflow-hidden"
+  />
+  <h5>{{ cards.title }}</h5>
+  <span>{{ cards.price | currency }}</span>
+</div>

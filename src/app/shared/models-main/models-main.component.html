@@ -1,0 +1,21 @@
+<section class="flex flex-col justify-center items-center mt-24">
+  <h2 class="font-extrabold text-4xl">Sneakers Models</h2>
+  <p class="mt-2">
+    Explore our wide range of sneakers models designed to match your style and
+    comfort needs.
+  </p>
+  <ul class="mt-8 flex justify-between gap-8 w-full text-white">
+    <li
+      *ngFor="let model of models"
+      class="max-w-[20vw] min-h-[35vh] bg-cover bg-center p-6 flex flex-col justify-end relative rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-110"
+      [style.background-image]="'url(' + model.image + ')'"
+      [attr.aria-label]="model.title"
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+      <h5 class="font-bold z-10">{{ model.title }}</h5>
+      <p class="text-sm z-10">
+        {{ model.description }}
+      </p>
+    </li>
+  </ul>
+</section>

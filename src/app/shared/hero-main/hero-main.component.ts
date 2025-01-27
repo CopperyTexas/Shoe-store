@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-hero-main',
+  standalone: true,
   imports: [RouterModule],
   templateUrl: './hero-main.component.html',
   animations: [
