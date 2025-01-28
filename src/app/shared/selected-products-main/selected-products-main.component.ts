@@ -13,22 +13,22 @@ export class SelectedProductsMainComponent {
   cards: Card[] = [
     {
       image: 'assets/images/products/CardImg/Sneaker-1.png',
-      title: 'Sneaker-1',
+      title: 'Velocity Edge',
       price: 25,
     },
     {
       image: 'assets/images/products/CardImg/Sneaker-2.png',
-      title: 'Sneaker-2',
+      title: 'Stride Nova',
       price: 20,
     },
     {
       image: 'assets/images/products/CardImg/Sneaker-3.png',
-      title: 'Sneaker-3',
+      title: 'Pulse Reactor',
       price: 30,
     },
     {
       image: 'assets/images/products/CardImg/Sneaker-4.png',
-      title: 'Sneaker-4',
+      title: 'Urban Glide',
       price: 35,
     },
   ];

@@ -1,9 +1,23 @@
-<div class="min-w-[10vw] min-h-[40vh] flex flex-col items-center">
+<div
+  class="min-w-[10vw] min-h-[20vh] flex flex-col items-center gap-2 justify-between p-4 rounded-lg"
+>
+  <!-- Изображение -->
   <img
     [src]="cards.image"
     [alt]="cards.title"
-    class="shadow-2xl bg-white rounded-lg overflow-hidden"
+    class="shadow-2xl bg-white rounded-lg overflow-hidden w-full"
   />
-  <h5>{{ cards.title }}</h5>
-  <span>{{ cards.price | currency }}</span>
+
+  <!-- Заголовок и цена -->
+  <div class="flex-grow flex flex-col items-center">
+    <h5 class="font-bold text-lg text-center">{{ cards.title }}</h5>
+    <span class="font-semibold">{{ cards.price | currency }}</span>
+  </div>
+
+  <!-- Кнопка -->
+  <button
+    class="bg-red-600 p-1 px-4 text-white font-semibold rounded-md transform hover:scale-110 transition-transform duration-300 mt-auto"
+  >
+    Add To Cart
+  </button>
 </div>
