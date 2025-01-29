@@ -1,0 +1,46 @@
+<div
+  class="flex flex-col justify-center items-center gap-4 rounded-lg overflow-hidden"
+>
+  <img
+    [src]="employee.avatar"
+    alt="{{ employee.name }}"
+    class="rounded-lg shadow-sm"
+  />
+  <h5 class="font-bold text-lg uppercase">{{ employee.name }}</h5>
+  <p class="text-sm">{{ employee.post }}</p>
+  <ul class="flex gap-4">
+    <li>
+      <a
+        [href]="employee.socials.facebook"
+        target="_blank"
+        aria-label="Facebook"
+        rel="noopener noreferrer"
+        class="inline-block transform transition-transform hover:-translate-y-1"
+      >
+        <app-svg-icon name="facebook" colorClass="text-red-500"></app-svg-icon>
+      </a>
+    </li>
+    <li>
+      <a
+        [href]="employee.socials.twitter"
+        target="_blank"
+        aria-label="Twitter"
+        rel="noopener noreferrer"
+        class="inline-block transform transition-transform hover:-translate-y-1"
+      >
+        <app-svg-icon name="twitter" colorClass="text-red-500"></app-svg-icon>
+      </a>
+    </li>
+    <li>
+      <a
+        [href]="employee.socials.instagram"
+        target="_blank"
+        aria-label="Instagram"
+        rel="noopener noreferrer"
+        class="inline-block transform transition-transform hover:-translate-y-1"
+      >
+        <app-svg-icon name="instagram" colorClass="text-red-500"></app-svg-icon>
+      </a>
+    </li>
+  </ul>
+</div>

@@ -36,3 +36,14 @@
     class="bg-[url(assets/images/bg/NewArrivals-bg.png)] bg-cover bg-center w-1/2 rounded-lg overflow-hidden h-72"
   ></div>
 </div>
+<div class="flex flex-col items-center mt-16">
+  <h3 class="font-extrabold text-3xl border-b-2 border-red-400 pb-2">
+    Our Incredible Team
+  </h3>
+  <ul class="flex justify-between items-center gap-6 mt-16">
+    <li *ngFor="let employee of team">
+      <app-teamcard [employee]="employee"></app-teamcard>
+    </li>
+  </ul>
+</div>
+<app-offer></app-offer>
