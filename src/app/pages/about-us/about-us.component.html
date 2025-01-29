@@ -3,7 +3,7 @@
 >
   <div class="absolute inset-0 bg-black bg-opacity-40"></div>
   <h2 class="z-10 font-bold text-4xl">About Us</h2>
-  <p class="z-10 text-sm w-1/2 mt-4">
+  <p class="z-10 text-lg w-1/2 mt-4">
     We are delighted to welcome you to our Shoe Store! Our goal is to provide
     comfort and style for every step you take. We strive to ensure that every
     customer can find the perfect pair of shoes that suits their lifestyle and
@@ -11,9 +11,28 @@
   </p>
 </div>
 <div>
-  <ul>
+  <ul class="flex justify-between gap-4 mt-16">
     <li *ngFor="let award of achievements">
       <app-achievements [achievements]="award"></app-achievements>
     </li>
   </ul>
+</div>
+<div class="flex justify-between gap-8 mt-16">
+  <div class="w-1/2 flex flex-col gap-4">
+    <h3 class="font-extrabold text-3xl">New Arrivals Every Week</h3>
+    <p>
+      Every week we add new models to our collection so you can always stay at
+      the forefront of the latest fashion trends. Explore a variety of styles
+      and colors, and most importantly, find that perfect pair that brings both
+      comfort and a vibrant look!
+    </p>
+    <a
+      routerLink="/shop"
+      class="bg-red-600 p-3 text-white font-semibold rounded-md transform hover:scale-110 inline-block transition-transform duration-300 max-w-36"
+      >See All Models</a
+    >
+  </div>
+  <div
+    class="bg-[url(assets/images/bg/NewArrivals-bg.png)] bg-cover bg-center w-1/2 rounded-lg overflow-hidden h-72"
+  ></div>
 </div>

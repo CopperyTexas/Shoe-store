@@ -1,3 +1,9 @@
-<img class="w-10" [src]="achievements.image" alt="achievements.title" />
-<h6>{{ achievements.title }}</h6>
-<p>{{ achievements.description }}</p>
+<div class="flex flex-col items-center justify-center gap-2">
+  <img
+    class="w-10 rounded-lg"
+    [src]="achievements.image"
+    alt="achievements.title"
+  />
+  <h6 class="font-bold">{{ achievements.title }}</h6>
+  <p class="text-sm max-w-sm text-center">{{ achievements.description }}</p>
+</div>

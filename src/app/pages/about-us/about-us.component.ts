@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { AchievementsComponent } from '../../shared/achievements/achievements.component';
 
 @Component({
   selector: 'app-about-us',
-  imports: [AchievementsComponent, CommonModule],
+  imports: [AchievementsComponent, CommonModule, RouterModule],
   standalone: true,
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.scss',
