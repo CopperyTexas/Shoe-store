@@ -1,1 +1,31 @@
-<p>contact-us works!</p>
+<div
+  class="min-h-[50vh] -mx-52 bg-[url('assets/images/bg/ContactUs-bg.png')] bg-cover bg-center relative text-white flex flex-col justify-center items-center"
+>
+  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+  <h2 class="z-10 font-bold text-4xl">Contact Us</h2>
+  <p class="z-10 text-lg w-1/2 mt-4">
+    If you have any questions, would like to learn more about our products, or
+    want to share suggestions for improving our service, we are always ready to
+    help. Send us a message, give us a call, or fill out the feedback form—our
+    team will respond as soon as possible. We value your time and strive to
+    provide the highest level of service to every customer.
+  </p>
+</div>
+<div>
+  <ul class="flex justify-between gap-4 mt-16">
+    <li *ngFor="let award of achievements" class="max-w-60">
+      <app-achievements [achievements]="award"></app-achievements>
+    </li>
+  </ul>
+</div>
+<div class="mt-16 flex justify-center items-center gap-6">
+  <div
+    class="bg-[url('/assets/images/contacts/RuningMan.png')] min-w-[600px] min-h-[60vh] bg-cover bg-center rounded-xl"
+  ></div>
+  <div>
+    <h6 class="font-bold text-xl">Your Feedback Is Much Appreciated!</h6>
+    <p class="mt-6 text-sm">
+      We will contact you when you complete the fillowing form!
+    </p>
+  </div>
+</div>
