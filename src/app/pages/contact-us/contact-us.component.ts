@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { AchievementsComponent } from '../../shared/achievements/achievements.component';
+import { ContactFormComponent } from '../../shared/contact-form/contact-form.component';
 
 @Component({
   selector: 'app-contact-us',
-  imports: [AchievementsComponent, CommonModule],
+  imports: [AchievementsComponent, CommonModule, ContactFormComponent],
   standalone: true,
   templateUrl: './contact-us.component.html',
   styleUrl: './contact-us.component.scss',
@@ -30,7 +31,7 @@ export class ContactUsComponent {
     {
       image: 'assets/images/contacts/Phone.png',
       title: 'Call Us',
-      description: '+7(123)456-78-90 +7(987)654-32-10',
+      description: 'Phone: +7(123)456-78-90 +7(987)654-32-10',
     },
   ];
 }
