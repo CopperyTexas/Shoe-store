@@ -1,10 +1,25 @@
-<form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-  <div>
-    <label for="name">Your Name</label>
-    <input type="text" id="name" name="name" [(ngModel)]="name" required />
+<form
+  (ngSubmit)="onSubmit(contactForm)"
+  #contactForm="ngForm"
+  class="flex flex-col gap-10"
+>
+  <div class="flex flex-col gap-1">
+    <label for="name" class="font-bold"
+      >Your Name <span class="text-red-500">*</span></label
+    >
+    <input
+      type="text"
+      id="name"
+      name="name"
+      [(ngModel)]="name"
+      required
+      class="border-2 border-red-400"
+    />
   </div>
-  <div>
-    <label for="email">Your Email Address</label>
+  <div class="flex flex-col gap-1">
+    <label for="email" class="font-bold"
+      >Your Email Address <span class="text-red-500">*</span></label
+    >
     <input
       type="text"
       id="email"
@@ -12,21 +27,40 @@
       [(ngModel)]="email"
       required
       email
+      class="border-2 border-red-400"
     />
   </div>
-  <div>
-    <label for="topic">Topic</label>
-    <input type="text" id="topic" name="topic" [(ngModel)]="topic" required />
+  <div class="flex flex-col gap-1">
+    <label for="topic" class="font-bold"
+      >Topic <span class="text-red-500">*</span></label
+    >
+    <input
+      type="text"
+      id="topic"
+      name="topic"
+      [(ngModel)]="topic"
+      required
+      class="border-2 border-red-400"
+    />
   </div>
-  <div>
-    <label for="message">Your Message</label>
+  <div class="flex flex-col gap-1">
+    <label for="message" class="font-bold"
+      >Your Message <span class="text-red-500">*</span></label
+    >
     <textarea
       type="text"
       id="message"
       name="message"
       [(ngModel)]="message"
       required
+      class="border-2 border-red-400"
     ></textarea>
   </div>
-  <button type="submit" [disabled]="contactForm.invalid">SEND</button>
+  <button
+    type="submit"
+    class="p-4 bg-red-500 rounded-xl text-white w-1/4 cursor-pointer"
+    [disabled]="contactForm.invalid"
+  >
+    SEND
+  </button>
 </form>

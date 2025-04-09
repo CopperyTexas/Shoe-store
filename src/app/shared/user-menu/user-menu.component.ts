@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-user-menu',
-  imports: [],
+  imports: [RouterLink],
   template: ` <ul class="w-32 flex justify-between">
     <li class="w-6 h-6">
       <button
@@ -14,6 +15,7 @@ import { Component } from '@angular/core';
     <li class="w-6 h-6">
       <button
         class="flex items-center rounded transform transition-transform hover:scale-150"
+        routerLink="/my-account"
       >
         <img src="assets/icons/user.svg" alt="User" class="w-6 h-6" />
       </button>
