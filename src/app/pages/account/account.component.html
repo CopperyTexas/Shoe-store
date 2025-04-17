@@ -1,1 +1,48 @@
-<p>account works!</p>
+<div
+  class="min-h-[25vh] -mx-52 mb-16 bg-[url('assets/images/bg/MyAccount-bg.png')] bg-cover bg-center relative text-white flex flex-col justify-center items-center"
+>
+  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+  <h2 class="z-10 font-bold text-4xl">My Account</h2>
+</div>
+<div class="w-full flex justify-center mb-16">
+  <form [formGroup]="accountForm" (ngSubmit)="onSubmit()">
+    <div class="flex flex-col w-96 gap-1 mb-8">
+      <label for="email">
+        Email address or username <span class="text-red-500">*</span>
+      </label>
+      <input
+        id="email"
+        formControlName="email"
+        placeholder="Your email"
+        class="w-full border-2 border-red-500 p-1"
+      />
+    </div>
+    <div class="flex flex-col w-96 gap-1 mb-6">
+      <label for="password">Password <span class="text-red-500">*</span></label>
+      <input
+        id="password"
+        formControlName="password"
+        placeholder="Your password"
+        class="w-full border-2 border-red-500 p-1"
+      />
+    </div>
+    <div class="mb-8 flex gap-4 items-center">
+      <input
+        id="rememberMe"
+        type="checkbox"
+        formControlName="rememberMe"
+        class="appearance-none w-4 h-4 border-2 border-gray-400 cursor-pointer checked:bg-gray-500 peer"
+      />
+      <label
+        for="rememberMe"
+        class="text-gray-400 cursor-pointer peer-checked:text-red-500"
+        >Remember me</label
+      >
+    </div>
+
+    <button type="submit" class="w-full bg-red-500 text-white p-2 mb-8">
+      LOG IN
+    </button>
+    <a href="" class="text-red-500 cursor-pointer">Forgot Your Password?</a>
+  </form>
+</div>
