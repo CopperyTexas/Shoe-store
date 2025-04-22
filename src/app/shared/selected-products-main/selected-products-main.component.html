@@ -2,8 +2,8 @@
   <h2 class="font-extrabold text-4xl">Selected Product</h2>
   <p class="mt-2">Discover our handpicked selection of products on sale.</p>
   <ul class="flex justify-between gap-8 mt-8">
-    <li *ngFor="let card of cards">
-      <app-product-card [cards]="card"></app-product-card>
+    <li *ngFor="let product of productList">
+      <app-product-card [cards]="product"></app-product-card>
     </li>
   </ul>
 </section>

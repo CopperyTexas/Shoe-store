@@ -2,15 +2,17 @@
   class="min-w-[10vw] min-h-[20vh] flex flex-col items-center gap-2 justify-between p-4 rounded-lg"
 >
   <!-- Изображение -->
-  <img
-    [src]="cards.image"
-    [alt]="cards.title"
-    class="shadow-2xl bg-white rounded-lg overflow-hidden w-full"
-  />
+  <div class="w-52 h-80 overflow-hidden shadow-2xl bg-white rounded-lg">
+    <img
+      [src]="cards.imageUrl"
+      [alt]="cards.name"
+      class="w-full h-full object-contain"
+    />
+  </div>
 
   <!-- Заголовок и цена -->
   <div class="flex-grow flex flex-col items-center">
-    <h5 class="font-bold text-lg text-center">{{ cards.title }}</h5>
+    <h5 class="font-bold text-lg text-center">{{ cards.name }}</h5>
     <span class="font-semibold">{{ cards.price | currency }}</span>
   </div>
 

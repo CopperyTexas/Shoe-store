@@ -1,7 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { Card } from '../../../models/card.model';
-import { ProductCardComponent } from './../product-card/product-card.component';
+import { Component, OnInit } from '@angular/core';
+
+import { ProductCardComponent } from '../product-card/product-card.component';
+import { ProductModel } from '../../../models/product.model';
+import { ProductsService } from '../../services/products.service';
 @Component({
   selector: 'app-selected-products-main',
   standalone: true,
@@ -9,27 +11,10 @@ import { ProductCardComponent } from './../product-card/product-card.component';
   templateUrl: './selected-products-main.component.html',
   styleUrl: './selected-products-main.component.scss',
 })
-export class SelectedProductsMainComponent {
-  cards: Card[] = [
-    {
-      image: 'assets/images/products/CardImg/Sneaker-1.png',
-      title: 'Velocity Edge',
-      price: 25,
-    },
-    {
-      image: 'assets/images/products/CardImg/Sneaker-2.png',
-      title: 'Stride Nova',
-      price: 20,
-    },
-    {
-      image: 'assets/images/products/CardImg/Sneaker-3.png',
-      title: 'Pulse Reactor',
-      price: 30,
-    },
-    {
-      image: 'assets/images/products/CardImg/Sneaker-4.png',
-      title: 'Urban Glide',
-      price: 35,
-    },
-  ];
+export class SelectedProductsMainComponent implements OnInit {
+  productList: ProductModel[] = [];
+  constructor(private ps: ProductsService) {}
+  ngOnInit() {
+    this.productList = this.ps.getRandomProducts(4);
+  }
 }
