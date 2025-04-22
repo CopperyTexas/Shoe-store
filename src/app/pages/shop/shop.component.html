@@ -1,3 +1,22 @@
-<div *ngFor="let product of productList">
-  <app-product-card [cards]="product"></app-product-card>
+<div class="flex justify-end gap-4">
+  <mat-form-field>
+    <mat-label> Default Sorting </mat-label>
+    <mat-select>
+      <mat-option value="all" class="bg-red-500">All Models</mat-option>
+      <mat-option value="sale">On Sale Models</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Search Models</mat-label>
+    <input matInput />
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+</div>
+<div class="flex">
+  <div class="w-1/5 h-full bg-red-500">Top Best Models</div>
+  <div class="flex flex-wrap gap-2 w-4/5">
+    <div *ngFor="let product of productList">
+      <app-product-card [cards]="product"></app-product-card>
+    </div>
+  </div>
 </div>

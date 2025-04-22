@@ -21,6 +21,7 @@ export class ProductsService {
       price: 129.99,
       score: 4.5,
       article: 2001,
+      sale: true,
       description: `Air Runner ZX — это перфектные кроссовки для тех,  
 кто ценит лёгкость и отзывчивость амортизации.  
 Специальная пена в межподошве гасит ударную нагрузку при каждом шаге,  
@@ -64,6 +65,7 @@ export class ProductsService {
       price: 59.99,
       score: 4.0,
       article: 2004,
+      sale: true,
       description: `Urban Chill Slip‑On — слип‑оны без шнурков для мгновенной обувки.  
 Эластичные вставки по бокам облегчают надевание,  
 а лёгкая конструкция делает их идеальными для прогулок и поездок.`,
@@ -92,6 +94,7 @@ export class ProductsService {
       price: 89.9,
       score: 4.2,
       article: 2006,
+      sale: true,
       description: `Vintage Skate LX вдохновлены классическими моделями эпохи 80-х,  
 но при этом оснащены современной поддержкой стопы.  
 Идеальны для скейтбординга и городских прогулок.`,
@@ -120,6 +123,7 @@ export class ProductsService {
       price: 159.0,
       score: 4.8,
       article: 2008,
+      sale: true,
       description: `Trail Blazer XT созданы для экстремального трейл‑раннинга.  
 Каждый компонент проверен в полевых условиях,  
 чтобы вы могли преодолевать любые препятствия без компромиссов.`,
@@ -148,6 +152,7 @@ export class ProductsService {
       price: 149.99,
       score: 4.7,
       article: 2010,
+      sale: true,
       description: `Aero Fly Knit обеспечивает посадку «второй кожи» благодаря бесшовному вязанию.  
 Стильный силуэт и высокая воздухопроницаемость  
 делают эти кроссовки отличным выбором для лета.`,
@@ -176,6 +181,7 @@ export class ProductsService {
       price: 129.0,
       score: 4.5,
       article: 2012,
+      sale: true,
       description: `CrossFit Fury заточен под функциональные тренировки.  
 Многоплоскостная подошва и вентиляция  
 позволяют быстро менять движения без потери сцепления.`,
@@ -204,6 +210,7 @@ export class ProductsService {
       price: 179.99,
       score: 4.9,
       article: 2014,
+      sale: true,
       description: `Speed Racer Ultra — рекордсмен по минимальному весу.  
 Монококовый каркас и аэродинамический дизайн  
 позволяют бегать быстрее с меньшими затратами энергии.`,
@@ -246,6 +253,7 @@ export class ProductsService {
       price: 139.5,
       score: 4.6,
       article: 2017,
+      sale: true,
       description: `All‑Terrain Defender — защита и комфорт в любых условиях.  
 Противоскользящая подошва и мембрана гарантируют сухость,  
 а прочный верх оберегает ногу от ударов и ветки.`,

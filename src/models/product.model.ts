@@ -8,5 +8,6 @@ export interface ProductModel {
   article: number;
   description: string;
   details: string;
+  sale?: boolean;
   reviews?: ReviewsModel[];
 }
