@@ -24,9 +24,11 @@ import { MatIconModule } from '@angular/material/icon';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ShopComponent implements OnInit {
+  bestModelList: ProductModel[] = [];
   productList: ProductModel[] = [];
   constructor(private ps: ProductsService) {}
   ngOnInit() {
     this.productList = this.ps.getProducts();
+    this.bestModelList = this.ps.getBestProduct(4.5);
   }
 }

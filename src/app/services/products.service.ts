@@ -11,6 +11,11 @@ export class ProductsService {
     }
     return Array.from(indices).map((i) => this.products[i]);
   }
+  getBestProduct(minScore: number) {
+    return this.products
+      .filter((p) => p.score >= minScore)
+      .sort((a, b) => b.score - a.score);
+  }
   getProducts(): ProductModel[] {
     return this.products;
   }
