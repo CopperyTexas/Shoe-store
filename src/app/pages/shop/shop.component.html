@@ -13,7 +13,12 @@
   </mat-form-field>
 </div>
 <div class="flex">
-  <div class="w-1/5 h-full bg-red-500">Top Best Models</div>
+  <div class="w-1/5 h-full bg-red-500">
+    Top Best Models
+    <div *ngFor="let product of bestModelList">
+      <app-best-model [cards]="product"></app-best-model>
+    </div>
+  </div>
   <div class="flex flex-wrap gap-2 w-4/5">
     <div *ngFor="let product of productList">
       <app-product-card [cards]="product"></app-product-card>

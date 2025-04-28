@@ -7,6 +7,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
+import { BestModelComponent } from '../../shared/best-model/best-model.component';
 
 @Component({
   selector: 'app-shop',
@@ -17,6 +18,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatSelectModule,
     MatIconModule,
     ProductCardComponent,
+    BestModelComponent,
   ],
   standalone: true,
   templateUrl: './shop.component.html',
